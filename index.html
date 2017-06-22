@@ -1,0 +1,114 @@
+<!doctype html>
+
+<head>
+
+  <title>t.js-demo</title>
+  <meta charset="utf-8"/>
+  <meta name="author" content="Mntn&reg; c/o Benjamin Lips"/>
+
+  <style type="text/css">
+    <!--
+
+    ::selection {
+      background: aquamarine;
+      color: white;
+    }
+
+    ::-webkit-selection {
+      background: aquamarine;
+      color: white;
+    }
+
+    ::-moz-selection {
+      background: aquamarine;
+      color: white;
+    }
+
+    body {
+      background: black;
+    }
+
+    #t {
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      visibility: hidden;
+      font-family: monospace;
+      line-height: 17px;
+      font-size: 13px;
+    }
+
+    ins, del {
+      text-decoration: none;
+    }
+
+    kbd {
+      font-family: inherit;
+    }
+
+    .t-caret {
+      font-size: inherit;
+      color: hotpink;
+    }
+
+    pre {
+      color: green;
+    }
+
+    -->
+  </style>
+
+
+  <script src="//cdn.jsdelivr.net/jquery/3/jquery.min.js"></script>
+  <script src="t.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+<pre id="demo_1">
+  <del>Hacking to the system<ins>2</ins>........</del>
+  <ins>Console backdoor @ Helium
+    <hr>
+
+  root@cc-team:~# </ins><ins>2</ins><kbd>ls</kbd>
+  Loading...
+  <ins>zzb</ins>...<ins>
+  <ins>zxm</ins>...<ins>
+  <ins>sjt</ins>...<ins>
+  <ins>zzb</ins>...<ins>
+  <ins>zzb</ins>...<ins>
+  <ins>zzb</ins>...<ins>
+  <span style="color:hotpink;">WangChunyang</span></ins>....
+
+  <ins>root@cc-team:~# </ins><ins>1</ins><kbd>mv ./WangChunyang somewhere else</kbd>
+  Pending...<ins>2</ins>....
+  Farewell!!! our best friend~~!!!
+  It's a <del>rainy</del>sunny day in <span style="color:yellow;">Shanghai, China.</span>
+  We <ins><span style="color:red;">love </span></ins>you.<span class="spnnr" style="color:red;display:inline-block;">&hearts;</span>
+
+  <ins>root@cc-team:~# </ins>
+</pre>
+
+<script type="text/javascript">
+  /*<![CDATA[*/
+
+
+  $('#demo_1').t({
+    blink: 300,
+    caret: '<span style="color:blue;">\u2589</span>',
+    pause_on_click: true
+  });
+
+
+  /*]]>*/
+</script>
+
+
+</body>
+
+
+</html>
